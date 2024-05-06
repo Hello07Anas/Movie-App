@@ -124,21 +124,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bOi-rc-GLR">
-                                <rect key="frame" x="133" y="59" width="126" height="52"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VST-iz-8ct">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="281"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The Pianist" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PK-Ec-27f">
+                                <rect key="frame" x="16" y="301" width="100" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="DesCription A Polish Jewish musician struggles to survive the destruction of the Warsaw ghetto of World War II" translatesAutoresizingMaskIntoConstraints="NO" id="UdX-uY-DYF">
+                                <rect key="frame" x="16" y="333" width="361" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="jr2-7K-0WJ">
+                                <rect key="frame" x="16" y="61" width="50" height="47"/>
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="EXg-d4-Enl"/>
+                                    <constraint firstAttribute="height" constant="50" id="n3o-As-nXk"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="rh3-ue-Tdq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.51098328829999995" green="0.51098328829999995" blue="0.51098328829999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jr2-7K-0WJ" firstAttribute="top" secondItem="rh3-ue-Tdq" secondAttribute="top" id="8KG-iI-EMQ"/>
+                            <constraint firstItem="jr2-7K-0WJ" firstAttribute="leading" secondItem="rh3-ue-Tdq" secondAttribute="leading" constant="16" id="GdS-hZ-piJ"/>
+                            <constraint firstAttribute="trailing" secondItem="VST-iz-8ct" secondAttribute="trailing" id="TwN-lf-32B"/>
+                            <constraint firstItem="VST-iz-8ct" firstAttribute="leading" secondItem="xLW-O5-PxG" secondAttribute="leading" id="Uz0-aJ-SqU"/>
+                            <constraint firstItem="VST-iz-8ct" firstAttribute="top" secondItem="xLW-O5-PxG" secondAttribute="top" id="gqq-ZT-VSS"/>
+                            <constraint firstItem="VST-iz-8ct" firstAttribute="height" secondItem="xLW-O5-PxG" secondAttribute="height" multiplier="0.33" id="s22-qj-8rF"/>
+                            <constraint firstItem="VST-iz-8ct" firstAttribute="width" secondItem="xLW-O5-PxG" secondAttribute="width" id="x7C-VR-2mn"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3LC-8Q-Wdz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1007" y="1390"/>
+            <point key="canvasLocation" x="1006.8702290076335" y="1388.0281690140846"/>
         </scene>
         <!--Home-->
         <scene sceneID="9Zz-vM-JAy">
@@ -148,9 +176,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VhZ-Zv-bpy">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="VhZ-Zv-bpy">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666669999997" alpha="0.49302424220000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="jwb-7b-MlB">
                                     <size key="itemSize" width="128" height="128"/>
@@ -191,9 +218,24 @@
                                     <outlet property="delegate" destination="4lc-kY-1cf" id="kXt-vf-pgO"/>
                                 </connections>
                             </collectionView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home!                             " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XbE-0f-XDV">
+                                <rect key="frame" x="20" y="49.333333333333343" width="353" height="45.666666666666657"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="anM-qu-45P"/>
                         <color key="backgroundColor" white="0.66666666669999997" alpha="0.49302424220000002" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VhZ-Zv-bpy" firstAttribute="top" secondItem="XbE-0f-XDV" secondAttribute="bottom" constant="8" symbolic="YES" id="EiI-Ch-V2P"/>
+                            <constraint firstItem="VhZ-Zv-bpy" firstAttribute="leading" secondItem="yfj-ef-ObG" secondAttribute="leading" id="RG7-R0-NKt"/>
+                            <constraint firstItem="VhZ-Zv-bpy" firstAttribute="bottom" secondItem="anM-qu-45P" secondAttribute="bottom" id="aso-n0-D2d"/>
+                            <constraint firstItem="XbE-0f-XDV" firstAttribute="leading" secondItem="yfj-ef-ObG" secondAttribute="leading" constant="20" symbolic="YES" id="cxg-uF-692"/>
+                            <constraint firstAttribute="trailing" secondItem="XbE-0f-XDV" secondAttribute="trailing" constant="20" symbolic="YES" id="cxq-ok-s2J"/>
+                            <constraint firstItem="VhZ-Zv-bpy" firstAttribute="centerX" secondItem="XbE-0f-XDV" secondAttribute="centerX" id="mS8-gv-yZp"/>
+                            <constraint firstItem="VhZ-Zv-bpy" firstAttribute="top" secondItem="anM-qu-45P" secondAttribute="top" id="odZ-Zt-4Gz"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Home" image="homekit" catalog="system" id="6mb-RN-vJ5"/>
                     <connections>
@@ -251,6 +293,7 @@
     <resources>
         <image name="Untitled design.gif" width="500" height="500"/>
         <image name="gearshape" catalog="system" width="128" height="123"/>
+        <image name="heart" catalog="system" width="128" height="107"/>
         <image name="homekit" catalog="system" width="128" height="104"/>
         <image name="movieclapper" catalog="system" width="128" height="113"/>
         <image name="star" catalog="system" width="128" height="116"/>
@@ -259,6 +302,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

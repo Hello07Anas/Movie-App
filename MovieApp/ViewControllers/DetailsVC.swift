@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Cosmos
 
 class DetailsVC: UIViewController {
 

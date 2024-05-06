@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C5836762BE8240400AB01C1 /* Cosmos in Frameworks */ = {isa = PBXBuildFile; productRef = 4C5836752BE8240400AB01C1 /* Cosmos */; };
 		4CD0CF592BE768D2007D24C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0CF582BE768D2007D24C8 /* AppDelegate.swift */; };
 		4CD0CF5B2BE768D2007D24C8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0CF5A2BE768D2007D24C8 /* SceneDelegate.swift */; };
 		4CD0CF5D2BE768D2007D24C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD0CF5C2BE768D2007D24C8 /* ViewController.swift */; };
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C5836762BE8240400AB01C1 /* Cosmos in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +139,9 @@
 			dependencies = (
 			);
 			name = MovieApp;
+			packageProductDependencies = (
+				4C5836752BE8240400AB01C1 /* Cosmos */,
+			);
 			productName = MovieApp;
 			productReference = 4CD0CF552BE768D2007D24C8 /* MovieApp.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 4CD0CF4C2BE768D2007D24C8;
+			packageReferences = (
+				4C5836742BE8240400AB01C1 /* XCRemoteSwiftPackageReference "Cosmos" */,
+			);
 			productRefGroup = 4CD0CF562BE768D2007D24C8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -425,6 +433,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4C5836742BE8240400AB01C1 /* XCRemoteSwiftPackageReference "Cosmos" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/Cosmos";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 25.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4C5836752BE8240400AB01C1 /* Cosmos */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4C5836742BE8240400AB01C1 /* XCRemoteSwiftPackageReference "Cosmos" */;
+			productName = Cosmos;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		4CD0CF612BE768D2007D24C8 /* MovieApp.xcdatamodeld */ = {
